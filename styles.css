@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #00ff88;
+  --background-color: #0a0f0d;
+  --accent-color: #1e2b18;
+  --text-color: #e0ffe0;
+  --subtitle-color: #00cc66;
+  --highlight-background: rgba(0, 255, 136, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--background-color), var(--accent-color));
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 20px 40px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 255, 136, 0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: var(--background-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+main {
+  padding: 60px 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--subtitle-color);
+  font-size: 1.8em;
+  font-weight: bold;
+  background-color: var(--highlight-background);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: #888;
+  border-top: 1px solid var(--primary-color);
+}
